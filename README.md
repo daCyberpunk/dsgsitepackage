@@ -23,6 +23,13 @@ https://www.roeder-webdesign.berlin
 
 > It's basically a work-in-progress extension even works already! That means it can be there some unused code, I let it there for later development, like the FileReference Model f.e.
 
+## Requirements
+
+* TYPO3 8.7
+* gridelements 8
+* cs_seo
+* realUrl (recommended)
+
 
 ## How Flexbox Grid is used
 Each GridElement gets some flexform configurations. There is always one for the row and one for each column. There you make the basic configuration how the flexbox model should be used in Frontend.
