@@ -1,0 +1,110 @@
+<html xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers" data-namespace-typo3-fluid="true">
+<f:spaceless>
+    <f:comment><!--rowdirection etc für die Spalten--></f:comment>
+        <div class="row {data.flexform_rowDirection} {data.flexform_rowWrap} layout-{data.layout} frame-{data.frame_class} frame-type-{data.CType}{f:if(condition: data.space_before_class, then: ' frame-space-before-{data.space_before_class}')}{f:if(condition: data.space_after_class, then: ' frame-space-after-{data.space_after_class}')}">
+            <div class="col col--{data.flexform_columnType_401} {data.flexform_class_401}">
+                <f:comment><!--rowdirection etc für childs --></f:comment>
+                <div class="row {data.flexform_rowDirection_401} {data.flexform_rowWrap_401}">
+                    <f:for each="{data.tx_gridelements_view_raw_columns.401}" as="child">
+                        <f:if condition="{0:child.CType} == {0:'gridelements_pi1'}">
+                            <f:then>
+
+                                <f:if condition="{data.frame_class} != none">
+                                    <f:then>
+
+                                        <div id="c{child.uid}" class="col col--{child.dsg_flex_layout} layout-{child.layout} frame-{child.frame_class} frame-type-{child.CType}{f:if(condition: child.space_before_class, then: ' frame-space-before-{child.space_before_class}')}{f:if(condition: child.space_after_class, then: ' frame-space-after-{child.space_after_class}')}">
+                                            <f:cObject typoscriptObjectPath="lib.dsgsitepackage.content" data="{child}" />
+                                        </div>
+
+                                    </f:then>
+                                    <f:else>
+                                        <a id="c{data.uid}"></a>
+                                        <div class="col">
+                                            <f:cObject typoscriptObjectPath="lib.dsgsitepackage.content" data="{child}" />
+                                        </div>
+                                    </f:else>
+                                </f:if>
+
+
+                            </f:then>
+                            <f:else>
+                                <f:cObject typoscriptObjectPath="lib.dsgsitepackage.content" data="{child}" />
+                            </f:else>
+                        </f:if>
+                    </f:for>
+                </div>
+            </div>
+            <div class="col col--{data.flexform_columnType_402} {data.flexform_class_402}">
+                <div class="row {data.flexform_rowDirection_402} {data.flexform_rowWrap_402}">
+                    <f:for each="{data.tx_gridelements_view_raw_columns.402}" as="child">
+                        <f:if condition="{0:child.CType} == {0:'gridelements_pi1'}">
+                            <f:then>
+                                <f:if condition="{data.frame_class} != none">
+                                    <f:then>
+
+                                        <div id="c{child.uid}" class="col col--{child.dsg_flex_layout} layout-{child.layout} frame-{child.frame_class} frame-type-{child.CType}{f:if(condition: child.space_before_class, then: ' frame-space-before-{child.space_before_class}')}{f:if(condition: child.space_after_class, then: ' frame-space-after-{child.space_after_class}')}">
+                                            <f:cObject typoscriptObjectPath="lib.dsgsitepackage.content" data="{child}" />
+                                        </div>
+
+                                    </f:then>
+                                    <f:else>
+                                        <a id="c{data.uid}"></a>
+                                        <div class="col">
+                                            <f:cObject typoscriptObjectPath="lib.dsgsitepackage.content" data="{child}" />
+                                        </div>
+                                    </f:else>
+                                </f:if>
+
+
+                            </f:then>
+                            <f:else>
+                                <f:cObject typoscriptObjectPath="lib.dsgsitepackage.content" data="{child}" />
+                            </f:else>
+                        </f:if>
+                    </f:for>
+                </div>
+            </div>
+            <div class="col col--{data.flexform_columnType_403} {data.flexform_class_403}">
+                <div class="row {data.flexform_rowDirection_403} {data.flexform_rowWrap_403}">
+                    <f:for each="{data.tx_gridelements_view_raw_columns.403}" as="child">
+                        <f:if condition="{0:child.CType} == {0:'gridelements_pi1'}">
+                            <f:then>
+                                <f:if condition="{data.frame_class} != none">
+                                    <f:then>
+
+                                        <div id="c{child.uid}" class="col col--{child.dsg_flex_layout} layout-{child.layout} frame-{child.frame_class} frame-type-{child.CType}{f:if(condition: child.space_before_class, then: ' frame-space-before-{child.space_before_class}')}{f:if(condition: child.space_after_class, then: ' frame-space-after-{child.space_after_class}')}">
+                                            <f:cObject typoscriptObjectPath="lib.dsgsitepackage.content" data="{child}" />
+                                        </div>
+
+                                    </f:then>
+                                    <f:else>
+                                        <a id="c{data.uid}"></a>
+                                        <div class="col">
+                                            <f:cObject typoscriptObjectPath="lib.dsgsitepackage.content" data="{child}" />
+                                        </div>
+                                    </f:else>
+                                </f:if>
+
+
+                            </f:then>
+                            <f:else>
+                                <f:cObject typoscriptObjectPath="lib.dsgsitepackage.content" data="{child}" />
+                            </f:else>
+                        </f:if>
+                    </f:for>
+                </div>
+            </div>
+        </div>
+</f:spaceless>
+</html>
+
+
+
+
+
+
+
+
+
+
+

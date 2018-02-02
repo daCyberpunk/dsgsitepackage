@@ -1,0 +1,5 @@
+{"vendorScripts":[
+  "JavaScript/Vendor/Modernizr-custom.js",
+  "JavaScript/Vendor/Cookieconsent.js",
+  "JavaScript/Vendor/Decryptmail.js"
+]}

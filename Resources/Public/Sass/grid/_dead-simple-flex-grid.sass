@@ -1,0 +1,58 @@
+/* Dead Simple Grid (c) 2015 Vladimir Agafonkin
+/* Forked 2016 by https://github.com/daCyberpunk/
+
+*
+  -webkit-box-sizing: border-box
+  -moz-box-sizing: border-box
+  box-sizing: border-box
+
+.flexbox .row, .flexboxtweener .row
+  display: -ms-flexbox      /* TWEENER - IE 10*/
+  display: -webkit-flex     /* NEW - Chrome*/
+  display: flex             /* NEW, Spec - Opera 12.1, Firefox 20+*/
+  zoom: 1
+  /*-ms-flex-pack: start/end/center/justify; */				/* TWEENER - IE 10 horizontal alignment*/
+  /*-ms-flex-align: start/end/center/stretch/basline;	*/	/* TWEENER - IE 10 vertical alignment*/
+
+  /*this is the same as:
+   * flex-direction: row;
+   * flex-wrap: wrap;
+   */
+  -ms-flex-flow: row wrap       /* TWEENER - IE 10*/
+  -webkit-flex-flow: row wrap
+  -moz-flex-flow: row wrap
+  flex-flow: row wrap
+
+.row
+  .row
+    margin: 0 -1.5rem
+    -ms-flex: 1 1 100%
+    -webkit-flex: 1 1 100%
+    flex: 1 1 100%
+  &:after
+    content: ""
+    clear: both
+    display: table
+
+.col
+  padding: 0  1.5rem
+  float: left
+  width: 100%
+
+.flexbox .col, .flexboxtweener .col
+  float: none
+  -ms-flex: 1 0 auto
+  -webkit-flex: 1 0 auto
+  flex: 1 0 auto
+
+
+.justify-content
+  text-align: center
+  > *
+    float: none
+    width: auto
+  .flexbox &, .flexboxtweener &
+    -webkit-justify-content: center
+    justify-content: center
+
+

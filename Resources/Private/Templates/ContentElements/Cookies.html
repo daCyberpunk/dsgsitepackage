@@ -1,0 +1,20 @@
+<script>
+    window.cookieconsent.initialise(
+        {
+            "content":{
+                "href": "<f:format.htmlspecialchars>{f:uri.page(pageUid: data.header_link)}</f:format.htmlspecialchars>",
+                "message": "{data.bodytext}",
+                "dismiss": "{data.rowDescription}",
+                "link": "{data.header}"
+            },
+            "palette":{
+                "popup":{
+                    "background":"#3c404d",
+                    "text":"#d6d6d6"
+                },
+                "button":{
+                    "background":"#ff8700"
+                }
+            }
+        });
+</script>

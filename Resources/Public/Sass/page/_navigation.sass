@@ -1,0 +1,123 @@
+.dsg-NavButton
+  display: block
+  margin: 20px
+  > i
+    cursor: pointer
+
+@media (min-width: $small-breakpoint)
+  .dsg-NavButton
+    display: none
+
+.dsg-MainNav
+  border-top: 1px solid #ddd
+  border-bottom: 1px solid #ddd
+  display: none
+  &.dsg-MainNav--isVisible
+    display: block
+
+@media (min-width: $small-breakpoint)
+  .dsg-MainNav
+    margin: 2em
+    display: block
+
+ul.dsg-MainNav-menu, ul.dsg-MainNav-submenu
+  margin: 0
+  padding: 0
+
+
+.dsg-MainNav-item--hasChildren i
+  padding-left: 5px
+
+.dsg-MainNav-menu
+  display: -webkit-box
+  display: -ms-flexbox
+  display: flex
+  -webkit-box-orient: vertical
+  -webkit-box-direction: normal
+  -ms-flex-direction: column
+  flex-direction: column
+  li
+    display: block
+    list-style-type: none
+    text-transform: uppercase
+    a
+      display: -webkit-box
+      display: -ms-flexbox
+      display: flex
+      text-align: center
+      text-decoration: none
+      color: #777
+      padding: 1rem
+      &:hover
+        background: #777
+        color: #fff
+
+@media (min-width: $small-breakpoint)
+  .dsg-MainNav-menu
+    -webkit-box-orient: horizontal
+    -webkit-box-direction: normal
+    -ms-flex-direction: row
+    flex-direction: row
+    -webkit-box-pack: justify
+    -ms-flex-pack: justify
+    justify-content: space-between
+
+
+li.dsg-MainNav-item > ul
+  display: none
+li.dsg-MainNav-item--selected > ul
+  display: block
+  color: #fff
+  padding-left: 2rem
+  background: #777
+  a
+    color: #fff
+.dsg-MainNav-submenu li
+  &:hover, a:hover, &.dsg-MainNav-item--selected
+    background: #ddd
+    color: #777
+
+@media (min-width: $small-breakpoint)
+  nav.dsg-MainNav ul
+    li:hover > ul,li.selected > ul
+      display: block
+      color: #fff
+      padding-left: 2rem
+
+  nav.dsg-MainNav ul ul
+    display: none
+    position: absolute
+
+@media (min-width: $small-breakpoint)
+  nav.dsg-MainNav ul li:hover
+    > ul
+      padding-left: 0
+      background: #777
+    a
+      color: #fff
+  .dsg-MainNav-menu > li:hover
+    background: #777
+  nav.dsg-MainNav ul li.dsg-MainNav-item--active > a
+    color: #801711
+
+  .dsg-MainNav-submenu li
+    display: -webkit-box
+    display: -ms-flexbox
+    display: flex
+    padding-right: 2em
+    &:hover, a:hover
+      background: #ddd
+      color: #777
+  nav.dsg-MainNav ul ul ul
+    margin: 0 0 0 100%
+    -webkit-box-shadow: 0 0 2px rgba(0, 0, 0, 0.6)
+    box-shadow: 0 0 2px rgba(0, 0, 0, 0.6)
+  .dsg-MainNav-item--hasChildren .dsg-MainNav-item--hasChildren > a:after
+    padding: 1px
+    -webkit-transform: rotate(-90deg)
+    transform: rotate(-90deg)
+
+.dsg-MainNav-menu .dsg-MainNav-item--active > a,
+.dsg-MainNav-submenu .dsg-MainNav-item--active > a
+  color: #801711
+

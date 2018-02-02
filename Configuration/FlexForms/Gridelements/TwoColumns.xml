@@ -1,0 +1,228 @@
+<T3DataStructure>
+    <meta>
+        <langDisable>1</langDisable>
+    </meta>
+    <sheets>
+        <sDEF>
+            <ROOT>
+                <TCEforms>
+                    <sheetTitle>LLL:EXT:dsgsitepackage/Resources/Private/Language/Backend.xlf:flexformGrid.row_configuraion</sheetTitle>
+                </TCEforms>
+                <type>array</type>
+                <el type="array">
+                    <rowDirection type="array">
+                        <TCEforms type="array">
+                            <label>LLL:EXT:dsgsitepackage/Resources/Private/Language/Backend.xlf:flexformGrid.row_direction</label>
+                            <config type="array">
+                                <type>select</type>
+                                <items type="array">
+                                    <numIndex index="0" type="array">
+                                        <numIndex index="0">row</numIndex>
+                                        <numIndex index="1">row--row</numIndex>
+                                    </numIndex>
+                                    <numIndex index="1" type="array">
+                                        <numIndex index="0">row-reverse</numIndex>
+                                        <numIndex index="1">row--row-reverse</numIndex>
+                                    </numIndex>
+                                    <numIndex index="2" type="array">
+                                        <numIndex index="0">column</numIndex>
+                                        <numIndex index="1">row--column</numIndex>
+                                    </numIndex>
+                                    <numIndex index="3" type="array">
+                                        <numIndex index="0">column reverse</numIndex>
+                                        <numIndex index="1">row--column-reverse</numIndex>
+                                    </numIndex>
+
+                                </items>
+                            </config>
+                        </TCEforms>
+                    </rowDirection>
+
+                    <rowWrap type="array">
+                        <TCEforms type="array">
+                            <label>LLL:EXT:dsgsitepackage/Resources/Private/Language/Backend.xlf:flexformGrid.row_wrap</label>
+                            <config type="array">
+                                <type>select</type>
+                                <items type="array">
+                                    <numIndex index="0" type="array">
+                                        <numIndex index="0">wrap</numIndex>
+                                        <numIndex index="1">row--wrap</numIndex>
+                                    </numIndex>
+                                    <numIndex index="1" type="array">
+                                        <numIndex index="0">no wrap</numIndex>
+                                        <numIndex index="1">row--no-wrap</numIndex>
+                                    </numIndex>
+                                    <numIndex index="2" type="array">
+                                        <numIndex index="0">wrap reverse</numIndex>
+                                        <numIndex index="1">row--wrap-reverse</numIndex>
+                                    </numIndex>
+                                </items>
+                            </config>
+                        </TCEforms>
+                    </rowWrap>
+                </el>
+            </ROOT>
+        </sDEF>
+        <column_401>
+            <ROOT>
+                <TCEforms>
+                    <sheetTitle>LLL:EXT:dsgsitepackage/Resources/Private/Language/Backend.xlf:flexformGrid.left_column</sheetTitle>
+                </TCEforms>
+                <type>array</type>
+                <el type="array">
+                    <columnType_401 type="array">
+                        <TCEforms type="array">
+                            <label>LLL:EXT:dsgsitepackage/Resources/Private/Language/Backend.xlf:flexformGrid.flex_basis_width</label>
+                            <config type="array">
+                                <type>select</type>
+                                <itemsProcFunc>FalkRoeder\Dsgsitepackage\UserFunc\Tca->flexLayoutItems</itemsProcFunc>
+                            </config>
+                        </TCEforms>
+                    </columnType_401>
+
+                    <rowDirection_401 type="array">
+                        <TCEforms type="array">
+                            <label>LLL:EXT:dsgsitepackage/Resources/Private/Language/Backend.xlf:flexformGrid.row_direction</label>
+                            <config type="array">
+                                <type>select</type>
+                                <items type="array">
+                                    <numIndex index="0" type="array">
+                                        <numIndex index="0">row</numIndex>
+                                        <numIndex index="1">row--row</numIndex>
+                                    </numIndex>
+                                    <numIndex index="1" type="array">
+                                        <numIndex index="0">row-reverse</numIndex>
+                                        <numIndex index="1">row--row-reverse</numIndex>
+                                    </numIndex>
+                                    <numIndex index="2" type="array">
+                                        <numIndex index="0">column</numIndex>
+                                        <numIndex index="1">row--column</numIndex>
+                                    </numIndex>
+                                    <numIndex index="3" type="array">
+                                        <numIndex index="0">column reverse</numIndex>
+                                        <numIndex index="1">row--column-reverse</numIndex>
+                                    </numIndex>
+
+                                </items>
+                            </config>
+                        </TCEforms>
+                    </rowDirection_401>
+
+                    <rowWrap_401 type="array">
+                        <TCEforms type="array">
+                            <label>LLL:EXT:dsgsitepackage/Resources/Private/Language/Backend.xlf:flexformGrid.row_wrap</label>
+                            <config type="array">
+                                <type>select</type>
+                                <items type="array">
+                                    <numIndex index="0" type="array">
+                                        <numIndex index="0">wrap</numIndex>
+                                        <numIndex index="1">row--wrap</numIndex>
+                                    </numIndex>
+                                    <numIndex index="1" type="array">
+                                        <numIndex index="0">no wrap</numIndex>
+                                        <numIndex index="1">row--no-wrap</numIndex>
+                                    </numIndex>
+                                    <numIndex index="2" type="array">
+                                        <numIndex index="0">wrap reverse</numIndex>
+                                        <numIndex index="1">row--wrap-reverse</numIndex>
+                                    </numIndex>
+                                </items>
+                            </config>
+                        </TCEforms>
+                    </rowWrap_401>
+
+                    <class_401 type="array">
+                        <TCEforms type="array">
+                            <label>LLL:EXT:dsgsitepackage/Resources/Private/Language/Backend.xlf:flexformGrid.class</label>
+                            <config type="array">
+                                <type>select</type>
+                                <itemsProcFunc>FalkRoeder\Dsgsitepackage\UserFunc\Tca->columnClassItems</itemsProcFunc>
+                            </config>
+                        </TCEforms>
+                    </class_401>
+                </el>
+            </ROOT>
+        </column_401>
+        <column_402>
+            <ROOT>
+                <TCEforms>
+                    <sheetTitle>LLL:EXT:dsgsitepackage/Resources/Private/Language/Backend.xlf:flexformGrid.right_column</sheetTitle>
+                </TCEforms>
+                <type>array</type>
+                <el type="array">
+                    <columnType_402 type="array">
+                        <TCEforms type="array">
+                            <label>LLL:EXT:dsgsitepackage/Resources/Private/Language/Backend.xlf:flexformGrid.flex_basis_width</label>
+                            <config type="array">
+                                <type>select</type>
+                                <itemsProcFunc>FalkRoeder\Dsgsitepackage\UserFunc\Tca->flexLayoutItems</itemsProcFunc>
+                            </config>
+                        </TCEforms>
+                    </columnType_402>
+
+                    <rowDirection_402 type="array">
+                        <TCEforms type="array">
+                            <label>LLL:EXT:dsgsitepackage/Resources/Private/Language/Backend.xlf:flexformGrid.row_direction</label>
+                            <config type="array">
+                                <type>select</type>
+                                <items type="array">
+                                    <numIndex index="0" type="array">
+                                        <numIndex index="0">row</numIndex>
+                                        <numIndex index="1">row--row</numIndex>
+                                    </numIndex>
+                                    <numIndex index="1" type="array">
+                                        <numIndex index="0">row-reverse</numIndex>
+                                        <numIndex index="1">row--row-reverse</numIndex>
+                                    </numIndex>
+                                    <numIndex index="2" type="array">
+                                        <numIndex index="0">column</numIndex>
+                                        <numIndex index="1">row--column</numIndex>
+                                    </numIndex>
+                                    <numIndex index="3" type="array">
+                                        <numIndex index="0">column reverse</numIndex>
+                                        <numIndex index="1">row--column-reverse</numIndex>
+                                    </numIndex>
+
+                                </items>
+                            </config>
+                        </TCEforms>
+                    </rowDirection_402>
+
+                    <rowWrap_402 type="array">
+                        <TCEforms type="array">
+                            <label>LLL:EXT:dsgsitepackage/Resources/Private/Language/Backend.xlf:flexformGrid.row_wrap</label>
+                            <config type="array">
+                                <type>select</type>
+                                <items type="array">
+                                    <numIndex index="0" type="array">
+                                        <numIndex index="0">wrap</numIndex>
+                                        <numIndex index="1">row--wrap</numIndex>
+                                    </numIndex>
+                                    <numIndex index="1" type="array">
+                                        <numIndex index="0">no wrap</numIndex>
+                                        <numIndex index="1">row--no-wrap</numIndex>
+                                    </numIndex>
+                                    <numIndex index="2" type="array">
+                                        <numIndex index="0">wrap reverse</numIndex>
+                                        <numIndex index="1">row--wrap-reverse</numIndex>
+                                    </numIndex>
+                                </items>
+                            </config>
+                        </TCEforms>
+                    </rowWrap_402>
+
+                    <class_402 type="array">
+                        <TCEforms type="array">
+                            <label>LLL:EXT:dsgsitepackage/Resources/Private/Language/Backend.xlf:flexformGrid.class</label>
+                            <config type="array">
+                                <type>select</type>
+                                <itemsProcFunc>FalkRoeder\Dsgsitepackage\UserFunc\Tca->columnClassItems</itemsProcFunc>
+                            </config>
+                        </TCEforms>
+                    </class_402>
+                </el>
+            </ROOT>
+        </column_402>
+    </sheets>
+
+</T3DataStructure>

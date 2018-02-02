@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<xliff version="1.0">
+    <file source-language="en" datatype="plaintext" original="messages" date="2013-09-19T09:11:39Z"
+          product-name="dsgsitepackage">
+        <header/>
+        <body>
+
+            <trans-unit id="theme_name">
+                <source>Sitepackage</source>
+            </trans-unit>
+            <trans-unit id="backend_layout.default">
+                <source>Default</source>
+            </trans-unit>
+            <trans-unit id="backend_layout.default_clean">
+                <source>Default, Clean</source>
+            </trans-unit>
+
+            <trans-unit id="backend_layout.column.main">
+                <source>Content</source>
+            </trans-unit>
+
+            <trans-unit id="dsg_flex_layout">
+                <source>Flex Base Width</source>
+            </trans-unit>
+            <trans-unit id="dsg_flex_layout.100">
+                <source>100%</source>
+            </trans-unit>
+            <trans-unit id="dsg_flex_layout.25">
+                <source>25%</source>
+            </trans-unit>
+            <trans-unit id="dsg_flex_layout.33">
+                <source>33%</source>
+            </trans-unit>
+            <trans-unit id="dsg_flex_layout.50">
+                <source>50%</source>
+            </trans-unit>
+            <trans-unit id="dsg_flex_layout.66">
+                <source>66%</source>
+            </trans-unit>
+            <trans-unit id="dsg_flex_layout.75">
+                <source>75%</source>
+            </trans-unit>
+
+
+             <!--Flexform Gridelements-->
+            <trans-unit id="flexformGrid.row_configuraion">
+                <source>Row Configuration</source>
+            </trans-unit>
+            <trans-unit id="flexformGrid.left_column">
+                <source>Left Column</source>
+            </trans-unit>
+            <trans-unit id="flexformGrid.middle_column">
+                <source>Middle Column</source>
+            </trans-unit>
+            <trans-unit id="flexformGrid.right_column">
+                <source>Right Column</source>
+            </trans-unit>
+            <trans-unit id="flexformGrid.row_direction">
+                <source>Row Direction</source>
+            </trans-unit>
+            <trans-unit id="flexformGrid.row_wrap">
+                <source>Wrap</source>
+            </trans-unit>
+            <trans-unit id="flexformGrid.flex_basis_width">
+                <source>Flex Basis Width</source>
+            </trans-unit>
+            <trans-unit id="flexformGrid.flex_basis_width_custom">
+                <source>Custom</source>
+            </trans-unit>
+            <trans-unit id="flexformGrid.flex_basis_width_custom_value">
+                <source>Flex Basis Width Custom</source>
+            </trans-unit>
+            <trans-unit id="flexformGrid.class">
+                <source>Additional Class</source>
+            </trans-unit>
+
+
+        </body>
+    </file>
+</xliff>
