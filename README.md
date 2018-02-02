@@ -1,5 +1,5 @@
 # dsgsitepackage
-TYPO3 sitepackage extension with dead simple grid and some basic configurations and content elements
+TYPO3 sitepackage extension with https://github.com/daCyberpunk/dead-simple-grid and some basic configurations and content elements
 
 ## What it does
 * adds a simple flexbox grid CSS to your page
