@@ -20,8 +20,6 @@ $EM_CONF[$_EXTKEY] = array(
                 array(
                     'typo3' => '8.6.1-8.99.99',
                     'realurl' => '*',
-                    'unroll' => '*',
-                    'vhs' => '*',
                     'cs_seo' => '*'
                 ),
             'conflicts' =>

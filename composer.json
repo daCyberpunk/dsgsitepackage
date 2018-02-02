@@ -1,0 +1,30 @@
+{
+  "repositories": [
+    { "type": "vcs", "url": "https://github.com/TYPO3-extensions/gridelements" }
+  ],
+  "name": "falkroeder/dsgsitepackage",
+  "type": "typo3-cms-extension",
+  "description": "Dead Simple Grid Sitepackage Extension",
+  "license": [
+    "GPL-2.0+"
+  ],
+  "keywords": [
+    "typo3",
+    "cms",
+    "grid"
+  ],
+  "version": "1.0.0",
+  "require": {
+    "typo3/cms-core": ">=8.7.0",
+    "gridelementsteam/gridelements": ">=8.0.0",
+    "typo3-ter/cs_seo": ">=2.2.0"
+  },
+  "suggest": {
+    "typo3-ter/realurl": "*"
+  },
+  "autoload": {
+    "psr-4": {
+      "FalkRoeder\\Dsgsitepackage\\": "Classes/"
+    }
+  }
+}
