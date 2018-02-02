@@ -11,7 +11,7 @@ page{
     tracking{
         google{
             anonymizeIp = 1
-            trackingID = UA-37961136-7
+            trackingID =
         }
     }
 
