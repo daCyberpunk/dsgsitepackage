@@ -73,7 +73,8 @@ class Tca
         $classList = explode(',', $settings['gridlemenents.']['columnClasses']);
 
         foreach ( $classList as $className ) {
-            $items[] = [$className,$className];
+
+            $items[] = [trim($className),trim($className)];
         }
         $conf['items'] = $items;
         return $conf;
