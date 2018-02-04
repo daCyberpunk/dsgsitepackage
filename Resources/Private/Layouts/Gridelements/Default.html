@@ -1,0 +1,21 @@
+<f:comment><!--row element for the grid columns--></f:comment>
+<f:if condition="{data.tx_gridelements_container}">
+    <!--if its a child of another gridelement-->
+    <f:then>
+        <div class="row {data.flexform_rowDirection} {data.flexform_rowWrap}">
+            <f:render section="Main"/>
+
+        </div>
+    </f:then>
+    <f:else>
+        <div id="c{data.uid}"  class="row {data.flexform_rowDirection} {data.flexform_rowWrap} layout-{data.layout} frame-{data.frame_class} frame-type-{data.CType} {f:if(condition: data.space_before_class, then: ' frame-space-before-{data.space_before_class}')} {f:if(condition: data.space_after_class, then: ' frame-space-after-{data.space_after_class}')}">
+            <f:render section="Main"/>
+        </div>
+    </f:else>
+</f:if>
+
+
+
+
+
+

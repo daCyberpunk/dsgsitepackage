@@ -40,7 +40,7 @@ $EM_CONF[$_EXTKEY] = array(
     'author' => 'Falk Röder',
     'author_email' => 'mail@falk-roeder.de',
     'author_company' => 'Röder Webdesign Berlin',
-    'version' => '1.0.0',
+    'version' => '1.0.1',
     'clearcacheonload' => true,
 );
 
