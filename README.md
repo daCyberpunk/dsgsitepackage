@@ -23,6 +23,16 @@ https://www.roeder-webdesign.berlin
 
 > It's basically a work-in-progress extension even works already! That means it can be there some unused code, I let it there for later development, like the FileReference Model f.e.
 
+### Why using it?
+Basically I believe in content-driven-design. In a CMS World thats a difficult approach as we want the option that content changes.
+If we design a page around a given content, then the design can be obsolete when content changes.
+But I think we can find a way between the design-first and the content-first approaches. To say it with the perspective to TYPO3: Dont use Backend Layouts anymore, as they are fixing everything.
+With flexible containers the editors can be enabled to adapt the layout of any page very individually to the content they add.
+Now somebody can argue, that an editor shouldn't have the permission to change layouts and designs. But in my experience I would say: Say allready do every day.
+If they set a special class for Content Element, a ruler before or even changing Backend Layouts...they always need to know what they are doing in context of frontend layout and design.
+Now they need to know maybe a little bit more especially about flexible Elements, how the flex grid works. The job of a content editor isn't just to insert text and images anymore.
+
+
 ## Requirements
 
 * TYPO3 8.7
@@ -37,10 +47,17 @@ Each GridElement gets some flexform configurations. There is always one for the 
 
 Each Content Element can get a Flex Basis Size. If you pput it in a gridelement it gets it right flexbox behavior based on that size.
 
+## Whats missing
+Right now I do not know how to integrate the following features without overloading the grid and content element preferences for the editors.
+But these points would make the usage of flexbox grids much more powerful:
 
+* media queries for each flex option so it can be adapted by the editor to the different devices.
+* flex-grow and flex-shrink
 
 ## You're free ...
 * to contribute, fork, use as you want..
+* to go in discussions with me about this approach
+* to develop ideas for the "Whats Missing" part above
 
 
 ## credits
