@@ -1855,6 +1855,27 @@ readers do not read off random characters that represent icons */
 
 .sr-only-focusable:active, .sr-only-focusable:focus { clip: auto; height: auto; margin: 0; overflow: visible; position: static; width: auto; }
 
+/*!
+ * Font Awesome Free 5.0.6 by @fontawesome - http://fontawesome.com
+ * License - http://fontawesome.com/license (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License)
+ */
+@font-face { font-family: 'Font Awesome 5 Brands'; font-style: normal; font-weight: normal; src: url("../Fonts/fa-brands-400.eot"); src: url("../Fonts/fa-brands-400.eot?#iefix") format("embedded-opentype"), url("../Fonts/fa-brands-400.woff2") format("woff2"), url("../Fonts/fa-brands-400.woff") format("woff"), url("../Fonts/fa-brands-400.ttf") format("truetype"), url("../Fonts/fa-brands-400.svg#fontawesome") format("svg"); }
+.fab { font-family: 'Font Awesome 5 Brands'; }
+
+/*!
+ * Font Awesome Free 5.0.6 by @fontawesome - http://fontawesome.com
+ * License - http://fontawesome.com/license (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License)
+ */
+@font-face { font-family: 'Font Awesome 5 Free'; font-style: normal; font-weight: 400; src: url("../Fonts/fa-regular-400.eot"); src: url("../Fonts/fa-regular-400.eot?#iefix") format("embedded-opentype"), url("../Fonts/fa-regular-400.woff2") format("woff2"), url("../Fonts/fa-regular-400.woff") format("woff"), url("../Fonts/fa-regular-400.ttf") format("truetype"), url("../Fonts/fa-regular-400.svg#fontawesome") format("svg"); }
+.far { font-family: 'Font Awesome 5 Free'; font-weight: 400; }
+
+/*!
+ * Font Awesome Free 5.0.6 by @fontawesome - http://fontawesome.com
+ * License - http://fontawesome.com/license (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License)
+ */
+@font-face { font-family: 'Font Awesome 5 Free'; font-style: normal; font-weight: 900; src: url("../Fonts/fa-solid-900.eot"); src: url("../Fonts/fa-solid-900.eot?#iefix") format("embedded-opentype"), url("../Fonts/fa-solid-900.woff2") format("woff2"), url("../Fonts/fa-solid-900.woff") format("woff"), url("../Fonts/fa-solid-900.ttf") format("truetype"), url("../Fonts/fa-solid-900.svg#fontawesome") format("svg"); }
+.fa, .fas { font-family: 'Font Awesome 5 Free'; font-weight: 900; }
+
 /* Dead Simple Grid (c) 2015 Vladimir Agafonkin */
 /* Forked 2016 by https://github.com/daCyberpunk/ */
 * { -webkit-box-sizing: border-box; box-sizing: border-box; }
