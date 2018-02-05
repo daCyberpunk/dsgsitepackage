@@ -16,5 +16,3 @@ lib.math{
 
 lib.pageName = TEXT
 lib.pageName.value = Dsgsitepackage GmbH
-
-lib.dsgsitepackage.content =< tt_content
