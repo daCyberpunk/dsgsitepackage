@@ -1,7 +1,7 @@
 <f:if condition="{0:child.CType} == {0:'gridelements_pi1'}">
     <!--if its a grid element-->
     <f:then>
-        <f:if condition="{data.frame_class} != none">
+        <f:if condition="{child.frame_class} != none">
             <f:then>
 
                 <div id="c{child.uid}" class="col col--{child.dsg_flex_layout} layout-{child.layout} frame-{child.frame_class} frame-type-{child.CType}{f:if(condition: child.space_before_class, then: ' frame-space-before-{child.space_before_class}')}{f:if(condition: child.space_after_class, then: ' frame-space-after-{child.space_after_class}')}">
@@ -10,8 +10,8 @@
 
             </f:then>
             <f:else>
-                <a id="c{child.uid}"></a>
                 <div class="col col--{child.dsg_flex_layout}">
+                    <a id="c{child.uid}"></a>
                     <f:cObject typoscriptObjectPath="lib.dsgsitepackage.content" data="{child}" />
                 </div>
             </f:else>
