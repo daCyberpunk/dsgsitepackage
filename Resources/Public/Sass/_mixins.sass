@@ -1,0 +1,58 @@
+//MIXINS
+
+@function calculateRem($size)
+  $remSize: $size / ($base-font-size / 1px)
+  @return #{$remSize}rem
+
+@function calculatePx($size)
+  $pxSize: ($size / 1rem) * ($base-font-size / 1px)
+  @return $pxSize
+
+
+
+@mixin fontSize($size)
+  font-size: #{$size}px
+  font-size: calculateRem($size)
+
+@mixin lineHeight($size)
+  line-height: #{$size}px
+  line-height: calculateRem($size)
+
+@mixin padding($size)
+  padding: #{$size}px
+  padding: calculateRem($size)
+
+@mixin paddingLeft($size)
+  padding-left: #{$size}px
+  padding-left: calculateRem($size)
+
+@mixin paddingRight($size)
+  padding-right: #{$size}px
+  padding-right: calculateRem($size)
+
+
+@mixin paddingTop($size)
+  padding-top: #{$size}px
+  padding-top: calculateRem($size)
+
+
+@mixin paddingBottom($size)
+  padding-bottom: #{$size}px
+  padding-bottom: calculateRem($size)
+
+
+@mixin marginTop($size)
+  margin-top: #{$size}px
+  margin-top: calculateRem($size)
+
+@mixin marginBottom($size)
+  margin-bottom: #{$size}px
+  margin-bottom: calculateRem($size)
+
+@mixin marginLeft($size)
+  margin-left: #{$size}px
+  margin-left: calculateRem($size)
+
+@mixin marginRight($size)
+  margin-right: #{$size}px
+  margin-right: calculateRem($size)
