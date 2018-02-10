@@ -1,8 +1,32 @@
+lib.generalMeta = TEXT
+lib.generalMeta.value (
+ <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="apple-mobile-web-app-capable" content="no">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="distribution" content="local">
+    <meta name="rating" content="general">
+    <meta name="revisit-after" content="10 days">
+)
+
+lib.robots = COA
+lib.robots {
+    1 = TEXT
+    1.value = <meta name="robots" content="index,follow">
+    1.if.isFalse.field = tx_csseo_no_index
+
+    2 = TEXT
+    2.value = <meta name="robots" content="noindex,nofollow">
+    2.if.isTrue.field = tx_csseo_no_index
+}
+
+
 [globalVar = GP:tx_news_pi1|news > 0]
     config.noPageTitle = 0
     page.headerData.654 >
     page.headerData.655 = COA
     page.headerData.655 {
+        30 < lib.robots
+        40 < lib.generalMeta
         10 =< lib.currentUrl
         10 {
             wrap = <link rel="canonical" href="|" />
@@ -25,16 +49,7 @@ page.meta {
 
 [applicationContext = Production]
     page.headerData.654{
-        30 = COA
-        30 {
-            1 = TEXT
-            1.value = <meta name="robots" content="index,follow">
-            1.if.isFalse.field = tx_csseo_no_index
-
-            2 = TEXT
-            2.value = <meta name="robots" content="noindex,nofollow">
-            2.if.isTrue.field = tx_csseo_no_index
-        }
+        30 < lib.robots
     }
 [end]
 [applicationContext = Production/Staging, Development]
@@ -96,15 +111,7 @@ page.headerData.654 {
     }
 
 
-    40 = TEXT
-    40.value (
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="apple-mobile-web-app-capable" content="no">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="distribution" content="local">
-    <meta name="rating" content="general">
-    <meta name="revisit-after" content="10 days">
-    )
+    40 < lib.generalMeta
     45 = TEXT
     45 {
         field = lastUpdated
@@ -112,34 +119,4 @@ page.headerData.654 {
         strftime = %Y-%m-%d
         wrap = <meta name="date" content="|">
     }
-
-#    50 = TEXT
-#    50.value (
-#    <script>
-#        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-#                    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-#                m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-#        })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
-#
-#        ga('create', 'UA-37961136-7', 'auto');
-#        ga('send', 'pageview');
-#
-#        function gtag_report_conversion(url) {
-#            var callback = function () {
-#                if (typeof(url) != 'undefined') {
-#                    window.location = url;
-#                }
-#            };
-#            gtag('event', 'conversion', {
-#                'send_to': 'AW-983822759/aSdaCIrp63sQp-OP1QM',
-#                'event_callback': callback
-#            });
-#            return false;
-#        }
-#
-#
-#    </script>
-#    )
-
-
 }
