@@ -91,7 +91,7 @@ page.headerData.654 {
                 forceAbsoluteUrl = 1
             }
             required = 1
-            wrap = <meta temprop="image" content="|" />
+            wrap = <meta itemprop="image" content="|" />
         }
     }
 
