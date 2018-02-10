@@ -1,8 +1,21 @@
 <div class="dsg-Page-bg">
     <body id="p{data.uid}" class="dsg-Page body-inset {pageClass}" cz-shortcut-listen="true"></body>
 
-    <f:render partial="Navigation" arguments="{_all}"/>
-    <f:render partial="Header" arguments="{_all}"/>
+    <div class="dsg-NavButton">
+        <i class="fa fa-bars fa-3x dsg-NavButton-icon"></i>
+    </div>
+    <div class="row pos-rel">
+
+
+        <div class="col">
+            <f:render partial="Navigation" arguments="{_all}"/>
+        </div>
+
+        <div class="col">
+            <f:render partial="Header" arguments="{_all}"/>
+        </div>
+    </div>
+
     <main class="dsg-Page-main">
         <!--TYPO3SEARCH_begin-->
 

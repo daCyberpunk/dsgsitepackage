@@ -2118,7 +2118,7 @@ readers do not read off random characters that represent icons */
 .dsg-MainNav { border-top: 1px solid #ddd; border-bottom: 1px solid #ddd; display: none; }
 .dsg-MainNav.dsg-MainNav--isVisible { display: block; }
 
-@media (min-width: 34em) { .dsg-MainNav { margin: 2em; display: block; } }
+@media (min-width: 34em) { .dsg-MainNav { display: block; } }
 ul.dsg-MainNav-menu, ul.dsg-MainNav-submenu { margin: 0; padding: 0; }
 
 .dsg-MainNav-item--hasChildren i { padding-left: 5px; }
