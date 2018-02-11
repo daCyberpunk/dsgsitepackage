@@ -16,6 +16,7 @@ config.removeDefaultJS = 1
     config.concatenateCss = 1
     config.compressJs = 1
     config.compressCss = 1
+    config.sendCacheHeaders = 1
     config.admPanel = 0
 [end]
 
