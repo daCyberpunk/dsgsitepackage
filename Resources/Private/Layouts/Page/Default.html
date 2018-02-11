@@ -15,6 +15,21 @@
             <f:render partial="Header" arguments="{_all}"/>
         </div>
     </div>
+        <f:if condition="{breadcrumb}">
+            <div class="dsg-Page-breadcrumb row">
+                <ul class="col">
+                    <f:for each="{breadcrumb}" as="item">
+                        <li class="dsg-Page-breadcrumbItem {f:if(condition: item.current, then: 'active')}">
+                            <f:link.page pageUid="{item.data.uid}" title="{item.title}">
+                                {item.title}
+                            </f:link.page>
+                            /&nbsp;
+                        </li>
+                    </f:for>
+                    {BreadcrumbNavigationNewsDetail}
+                </ul>
+            </div>
+        </f:if>
 
     <main class="dsg-Page-main">
         <!--TYPO3SEARCH_begin-->

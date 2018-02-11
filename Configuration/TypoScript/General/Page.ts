@@ -165,6 +165,21 @@ page {
                     if.isTrue = {$page.logo.alt}
                 }
             }
+            BreadcrumbNavigationNewsDetail = COA
+            BreadcrumbNavigationNewsDetail {
+                10 = RECORDS
+                10 {
+                    if.isTrue.data = GP:tx_news_pi1|news
+                    dontCheckPid = 1
+                    tables = tx_news_domain_model_news
+                    source.data = GP:tx_news_pi1|news
+                    source.intval = 1
+                    conf.tx_news_domain_model_news = TEXT
+                    conf.tx_news_domain_model_news {
+                        field = title
+                    }
+                }
+            }
             pageClass < lib.page.class
         }
 

@@ -2147,3 +2147,8 @@ li.dsg-MainNav-item--selected > ul a { color: #fff; }
   nav.dsg-MainNav ul ul ul { margin: 0 0 0 100%; -webkit-box-shadow: 0 0 2px rgba(0, 0, 0, 0.6); box-shadow: 0 0 2px rgba(0, 0, 0, 0.6); }
   .dsg-MainNav-item--hasChildren .dsg-MainNav-item--hasChildren > a:after { padding: 1px; -webkit-transform: rotate(-90deg); -ms-transform: rotate(-90deg); transform: rotate(-90deg); } }
 .dsg-MainNav-menu .dsg-MainNav-item--active > a, .dsg-MainNav-submenu .dsg-MainNav-item--active > a { color: #801711; }
+
+li.dsg-Page-breadcrumbItem { list-style-type: none; float: left; }
+
+.dsg-Page-breadcrumb { margin-top: 24px; margin-top: 1.5rem; }
+.dsg-Page-breadcrumb ul.col { margin: 0; }
